@@ -1,0 +1,224 @@
+/* Reset default margins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply font-family globally */
+body, p, h1, h2, h3, h4, h5, h6, span {
+    font-family: "DM Sans", Sans-serif !important;
+}
+
+/* Set background color for the body */
+body {
+    background-color: #FFF5F0;
+}
+
+/* Center content within the container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap:10px;
+}
+
+/* Center items within columns */
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.coll {
+    display: flow;
+    float: left;
+}
+/* Style input fields */
+.col input {
+    display: block; 
+    border: 1px solid rgba(85, 82, 82, 0.5);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    width: 100%;
+}
+
+/* Style file input field */
+.col input[type="file"] {
+    border: 1px dashed rgba(85, 82, 82, 0.5);
+    width: 100%;
+}
+
+/* Style submit button */
+.col input[type="submit"] {
+    border: none;
+    width: 250px;
+    border-radius: 50px;
+    padding: 20px;
+    font-size: large;
+    font-weight: 500;
+    color: white;
+    background-color: #EC6930;
+    cursor: pointer;
+}
+
+/* Hover effect for submit button */
+.col input[type="submit"]:hover {
+    border: 1px solid #EC6930;
+    color: #EC6930;
+    background-color: white;
+}
+
+/* Style date input field */
+.form-row .column input[type="date"] {
+    width: 40%;
+}
+
+/* Style placeholder text */
+.col input::placeholder {
+    color: gray;
+    font-weight: 500;
+}
+input[type="text"]:focus::placeholder,
+input[type="email"]:focus::placeholder,
+input[type="tel"]:focus::placeholder,
+input[type="date"]:focus::placeholder,
+textarea:focus::placeholder {
+    visibility: hidden;
+}
+
+/* Style for col2 container */
+#col2 {
+    margin-top: 40px;
+    background-color: #FFFFFF;
+    width: 900px;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Center and style form heading */
+#col2 form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style for form rows */
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+/* Ensure columns take equal width */
+.form-row .column {
+    flex: 1;
+    margin: 2px;
+}
+
+/* Ensure input fields fill their columns */
+.form-row .column input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Style textareas */
+textarea {
+    margin: 10px 0 10px 30px;
+    border: 1px solid rgba(85, 82, 82, 0.5);
+    border-radius: 10px;
+    width: 70%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Style images within span inside .col */
+.col span img {
+    width: 30px;
+    background: #EC6930;
+    border-radius: 40px;
+}
+
+/* Additional styling for .c1 span */
+.col .c1 span {
+
+    padding: 15px;
+    color: #EC6930;
+}
+
+/* Style for paragraph inside .c1 */
+.col .c1 p {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Style for h3 inside .col */
+h3 {
+    color: #EC6930;
+    margin-left: 10px;
+    margin-bottom: 100px;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+/* Style for .c1 inside .col */
+.col .c1 {
+     float: left;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#c-1{
+    font-weight: lighter;
+}
+.col hr{
+    width: 100%;
+    border: 1px solid #EC6930;
+}
+/* Styles for the container */
+.c1 {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Styles for the 'Connect with us' heading */
+#c-1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Styles for the contact details */
+.c1 p {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.c1 p img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Styles for the circular background */
+.circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px; /* Adjust as needed */
+    border-radius: 50%;
+    background-color: #EC6930; /* Change the background color as needed */
+}
+
+.circle img {
+    width: 100%;
+    height: 60%;
+    object-fit: contain;
+}
+#H{
+    font-size: 32px;
+}
